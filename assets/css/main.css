@@ -419,24 +419,11 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/bg/divider1.jpg')
+	background-image: url('../img/item-bg.jpg')
 }
 
 .divider2 {
-	background-image: url('../img/bg/divider2.jpg')
-}
-
-.divider3 {
-	background-image: url('../img/bg/divider3.jpg');
-	margin-top: 100px;
-}
-
-.divider4 {
-	background-image: url('../img/bg/item-bg.jpg')
-}
-
-.divider6 {
-	background-image: url('../img/bg/portfolio-bg.jpg')
+	background-image: url('../img/portfolio-bg.jpg')
 }
 
 .portf{
