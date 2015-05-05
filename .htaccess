@@ -3,6 +3,11 @@
 FileETag MTime Size
 
 <IfModule expires_module>
-    ExpiresActive on
-    ExpiresDefault "access plus 1 week"
+    ExpiresActive On
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/html "access 1 month"
+    ExpiresByType image/x-icon "access 1 year"
+    ExpiresDefault "access plus 1 month"
 </IfModule>
