@@ -10,35 +10,25 @@
 <link href="assets/css/bootstrap.min.css" rel=stylesheet>
 <link href="assets/css/grayscale.css" rel=stylesheet>
 <link href="assets/css/main.css" rel=stylesheet>
-<link href="assets/css/demo.css" rel=stylesheet>
 <link href="assets/font-awesome/css/font-awesome.min.css" rel=stylesheet type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel=stylesheet type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel=stylesheet type="text/css">
 <link rel=stylesheet href="assets/css/icomoon.css">
 <link href="assets/css/animate-custom.css" rel=stylesheet>
-<script async src="assets/js/jquery.min.js"></script>
-<script async src="assets/js/modernizr.custom.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/modernizr.custom.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script async src="assets/js/responsiveslides.min.js"></script>
+<script src="assets/js/responsiveslides.min.js"></script>
 <style type="text/css">
 .rslides {position: relative;list-style: none;overflow: hidden;width: 100%;padding: 0;margin: 0;}
 .rslides li {-webkit-backface-visibility: hidden;position: absolute;display: none;width: 100%;left: 0;top: 0;}
 .rslides li:first-child {position: relative;display: block;float: left;}	
 </style>
 <script>$(function(){$("#slider4").responsiveSlides({auto:false,pager:false,nav:true,speed:500,namespace:"callbacks",before:function(){$('.events').append("<li>before event fired.</li>");},after:function(){$('.events').append("<li>after event fired.</li>");}});});</script>
-<script async type="text/javascript">!function ($) {
-$body.scrollspy({
-      target: '#navbar-main',
-      offset: navHeight
-    })
-
-    $window.on('load', function () {
-      $body.scrollspy('refresh')
-    })
-
-    $('#navbar-main [href=#]').click(function (e) {
-      e.preventDefault()
-    })
+<script type="text/javascript">!function ($) {
+$body.scrollspy({target: '#navbar-main',offset: navHeight})
+$window.on('load', function () {$body.scrollspy('refresh')})
+$('#navbar-main [href=#]').click(function (e) {e.preventDefault()})
 });</script>
 </head>
 <body id=page-top data-spy=scroll data-target=.navbar-fixed-top>
@@ -86,15 +76,15 @@ $body.scrollspy({
 <section id=certif class="container content-section text-center">
 <div class=row>
 <h1 class=centered>Certificaciones</h1><hr><br>
-<div class="col-lg-3 certf"><img src="assets/img/oca.jpg"></div>
-<div class="col-lg-3 certf"><img src="assets/img/oca2.jpg"></div>
-<div class="col-lg-3 certf"><img src="assets/img/ocp.jpg"></div>
-<div class="col-lg-3 certf"><img src="assets/img/ocm.jpg"></div>
+<div class="col-lg-3 certf grises"><img src="assets/img/oca.jpg"></div>
+<div class="col-lg-3 certf grises"><img src="assets/img/oca2.jpg"></div>
+<div class="col-lg-3 certf grises"><img src="assets/img/ocp.jpg"></div>
+<div class="col-lg-3 certf grises"><img src="assets/img/ocm.jpg"></div>
 </div>
-<div class=row>
-<div class="col-lg-4 certf"><img src="assets/img/oce.jpg"></div>
-<div class="col-lg-4 certf"><img src="assets/img/oce2.jpg"></div>
-<div class="col-lg-4 certf"><img src="assets/img/ibm.jpg"></div>
+<div class= "row" align="center">
+<div class="col-lg-4 certf grises"><img src="assets/img/oce.jpg"></div>
+<div class="col-lg-4 certf grises"><img src="assets/img/oce2.jpg"></div>
+<div class="col-lg-4 certf grises"><img src="assets/img/ibm.jpg"></div>
 </div>
 </section>
 <section id=portfolio class="section-divider textdivider divider1">
@@ -227,20 +217,20 @@ $body.scrollspy({
 </div>
 <section id=coments class="container content-section text-center">
 <h1 class=centered>Lo que dicen nuestros clientes</h1><hr><br>
-<div class=callbacks_container>
+<div class="container callbacks_container">
 <ul class=rslides id=slider4>
 <li>
-<div class=coments>
-<div class="col-lg-10 blog-content">
-<h4 class=ppal> <i class="fa fa-quote-left"></i> Los Ingenieros de Infobc son excelentes programadores, comunicadores y sobre todo son solucionadores de problemas. Las habilidades que poseen son diversas y se adaptan a cualquier situación. Puedo decir sinceramente que es una de las empresas más talentosa, comunicativa y única con la que he tenido el privilegio de trabajar. <i class="fa fa-quote-right"></i></h4>
+<div class=content>
+<div class="col-lg-12 blog-content">
+<h4> <i class="fa fa-quote-left"></i> Los Ingenieros de Infobc son excelentes programadores, comunicadores y sobre todo son solucionadores de problemas. Las habilidades que poseen son diversas y se adaptan a cualquier situación. Puedo decir sinceramente que es una de las empresas más talentosa, comunicativa y única con la que he tenido el privilegio de trabajar. <i class="fa fa-quote-right"></i></h4>
 <h3 align=right>Jake Moskowitz | CEO & Co-Fundador de voyhoy.com</h3><br>
 </div>
 </div>
 </li>
 <li>
-<div class="coments ">
-<div class="col-lg-10 blog-content">
-<h4 class=ppal> <i class="fa fa-quote-left"></i> Recomendamos firmemente a Infobc pues estamos extremadamente satisfechos con su rendimiento. Los desarrolladores entregan un trabajo de alta calidad a tiempo. Pero lo más importante, a diferencia de otras empresas, es que son de fiar y confiar, se comunican frecuentemente y entregan lo que prometen en el tiempo y costo razonable. Tienen un gran conocimiento y un profundo entendimiento del desarrollo "backend" de una aplicación. Es importante mencionar que pueden ponerse al día en cualquier aspecto técnico para enfrentar tareas nuevas o desconocidas. Durante los años que hemos trabajado juntos, siempre han mejorado cada día. <i class="fa fa-quote-right"></i></h4>
+<div class=content>
+<div class="col-lg-12 blog-content">
+<h4> <i class="fa fa-quote-left"></i> Recomendamos firmemente a Infobc pues estamos extremadamente satisfechos con su rendimiento. Los desarrolladores entregan un trabajo de alta calidad a tiempo. Pero lo más importante, a diferencia de otras empresas, es que son de fiar y confiar, se comunican frecuentemente y entregan lo que prometen en el tiempo y costo razonable. Tienen un gran conocimiento y un profundo entendimiento del desarrollo "backend" de una aplicación. Es importante mencionar que pueden ponerse al día en cualquier aspecto técnico para enfrentar tareas nuevas o desconocidas. Durante los años que hemos trabajado juntos, siempre han mejorado cada día.<i class="fa fa-quote-right"></i></h4>
 <h3 align=right>Marcus J. Mollmann | CEO de capdominus.com / closetbox.me</h3><br>
 </div>
 </div>
