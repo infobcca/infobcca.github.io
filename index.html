@@ -7,11 +7,9 @@
 <meta name=description content="">
 <meta name=author content="">
 <title>InfoBC</title>
-<link href="assets/css/bootstrap.min.css" rel=stylesheet>
+<link href="assets/css/bootstrap.min.css" rel=stylesheet> <!-- Archivos css-->
 <link href="assets/css/grayscale.css" rel=stylesheet>
 <link href="assets/css/main.css" rel=stylesheet>
-<script async src="assets/js/jquery.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <link href="assets/font-awesome/css/font-awesome.min.css" rel=stylesheet type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel=stylesheet type="text/css">
 <style type="text/css">
@@ -19,8 +17,10 @@
 .rslides li {-webkit-backface-visibility: hidden;position: absolute;display: none;width: 100%;left: 0;top: 0;}
 .rslides li:first-child {position: relative;display: block;float: left;}	
 </style>
+<script async src="assets/js/jquery.min.js"></script> <!--JQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>$(function(){$("#slider4").responsiveSlides({auto:false,pager:false,nav:true,speed:500,namespace:"callbacks",before:function(){$('.events').append("<li>before event fired.</li>");},after:function(){$('.events').append("<li>after event fired.</li>");}});});</script>
-<script type="text/javascript">!function ($) {
+<script async type="text/javascript">!function ($) {
 $body.scrollspy({target: '#navbar-main',offset: navHeight})
 $window.on('load', function () {$body.scrollspy('refresh')})
 $('#navbar-main [href=#]').click(function (e) {e.preventDefault()})
