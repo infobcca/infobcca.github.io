@@ -25,7 +25,7 @@ a, a:hover{
 h1, h2, h5, h6{font-family:"Raleway";font-weight:300;color:#333;text-transform: uppercase;}
 h4{margin: 0 0 35px;font-family:"Raleway";line-height: 1.5;font-size: 24px;}
 h3{font-family:"Raleway";color:#A09F9F;}
-
+h5{font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 
 html,
 body{
@@ -247,7 +247,7 @@ hr:before {
 .grid figure{margin:0;position:relative;}
 .grid figure img{width:100%;display:block;position:relative;}
 .grid figcaption{position:absolute;top:0;left:0;padding:20px;color:#fff;background:#3498db;}
-.grid figcaption h5{margin:0;padding-top:0px;padding-left:20px;padding-bottom:5px;color:#fff;font-weight:700;text-align:left;letter-spacing:1px;font-family:"Raleway";}
+.grid figcaption h5{margin:0;padding-top:0px;padding-left:20px;padding-bottom:5px;color:#fff;font-weight:700;text-align:left;letter-spacing:1px;font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 .grid figcaption a{text-align:left;padding:5px 10px;margin-left:20px;display:inline-block;background:#2f2f2f;color:#fff;font-size:13px;}
 .mask figure{overflow:hidden;}
 .mask figure img{-webkit-transition:-webkit-transform 0.4s;-moz-transition:-moz-transform 0.4s;transition:transform 0.4s;}
@@ -258,7 +258,7 @@ hr:before {
 .mask figure.cs-hover figcaption{opacity:1;-webkit-transform:translateY(0px);-moz-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:-webkit-transform 0.4s, opacity 0.1s;-moz-transition:-moz-transform 0.4s, opacity 0.1s;transition:transform 0.4s, opacity 0.1s;}
 .mask figcaption a{position:absolute;top:10px;bottom:10px;right:30px;}
 .modal-header{background:#3498db;}
-.modal-header h4{color:white;}
+.modal-header h4{color:white;font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 .modal-footer{background:#2b2b2b;}
 
 /* ==========================================================================
