@@ -17,8 +17,7 @@
 .rslides li:first-child {position: relative;display: block;float: left;}	
 </style>
 <script async src="assets/js/jquery.min.js"></script> <!--JQuery-->
-<script>
-$(function(){$("#slider4").responsiveSlides({auto:false,pager:false,nav:true,speed:500,namespace:"callbacks",before:function(){$('.events').append("<li>before event fired.</li>");},after:function(){$('.events').append("<li>after event fired.</li>");}});});</script>
+
 </head>
 <body id=page-top data-spy=scroll data-target=.navbar-fixed-top>
 <nav class="navbar navbar-custom navbar-fixed-top" role=navigation>
@@ -249,6 +248,8 @@ $(function(){$("#slider4").responsiveSlides({auto:false,pager:false,nav:true,spe
 </div>
 </footer>
 <script src="assets/js/bootstrap.min.js"></script>
+<script>
+$(function(){$("#slider4").responsiveSlides({auto:false,pager:false,nav:true,speed:500,namespace:"callbacks",before:function(){$('.events').append("<li>before event fired.</li>");},after:function(){$('.events').append("<li>after event fired.</li>");}});});</script>
 <script type="text/javascript">!function ($) {
 $body.scrollspy({target: '#navbar-main',offset: navHeight})
 $window.on('load', function () {$body.scrollspy('refresh')})
