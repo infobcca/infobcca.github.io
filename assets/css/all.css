@@ -1,10 +1,10 @@
-body{font-size:1em;line-height:1.4;font-family:"Lato";font-weight:300;font-size:14px;color:#555;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;}
-p{margin:0 0 25px;font-size:18px;line-height:1.5;}
+body{font-size:1em;line-height:1.4;font-family:"Lora";font-weight:300;font-size:14px;color:#555;-webkit-font-smoothing:antialiased;-webkit-overflow-scrolling:touch;}
+p{margin:0 0 25px;font-size:18px;line-height:1.5;font-family:GoodWeb-Book,"Helvetica Neue",Helvetica,Arial,sans-serif;}
 a, a:hover{text-decoration:none;}
-h1, h2, h5, h6{font-family:"Raleway";font-weight:300;color:#333;text-transform:uppercase;}
-h4{margin:0 0 35px;font-family:"Raleway";line-height:1.5;font-size:24px;}
-h3{font-family:"Raleway";color:#A09F9F;}
-h5{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+h1, h2, h5, h6{font-family:"Lato";font-weight:300;color:#333;text-transform:uppercase;}
+h4{margin:0 0 35px;font-family:"Lora";line-height:1.5;font-size:24px;}
+h3{font-family:"Lora";color:#A09F9F;}
+h5{font-family:"Lora";}
 html,
 body{width:100%;height:100%;}
 hr{position:relative;border:none;}
@@ -38,7 +38,7 @@ hr:before{content:" ";position:absolute;top:0;left:25%;width:50%;height:2px;back
 .btn-default:hover,
 .btn-default:focus{border:1px solid #000;outline:0;color:#fff;background-color:#000;}
 .btn-lg{padding:10px 16px;font-size:18px;line-height:1.33;border-radius:6px;}
-.grises img{filter:url('#grayscale');width:173px;height:112px;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:Gray();-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
+.grises img{display:block;filter:url('#grayscale');width:173px;height:112px;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:Gray();-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .grises img:hover{width:173px;height:112px;-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:none;-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-ms-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
 .portf{margin-top:100px;}
 .portf a{color:#0CF6AE; font-size: 20px;}
@@ -57,25 +57,42 @@ hr:before{content:" ";position:absolute;top:0;left:25%;width:50%;height:2px;back
 footer{margin-top:50px;padding:20px 0;background:#000;}
 footer p{margin:0;color:#fff;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-align: left;display: inline-block;}
 .footer a {color:white;outline:none;}
-@media screen and (max-width:600px){h1{font:24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;}
-.callbacks_nav{top:47%;}
-}
-@media(min-width:768px){p{margin:0 0 35px;font-size:20px;line-height:1.6;text-align:center;}
-.intro{height:100%;padding:0;}
-.intro .intro-body .brand-heading{font-size:100px;font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;color:#fff;text-shadow:2px 2px 3px rgba(0, 0, 0, 0.6);}
-.content-section{padding-top:80px;}
-}
-@media(min-width:320px){
-	.content-section{padding-top:50px;}
-}
-@media(max-width:380px){
-	.arrow{padding-top:10px !important;font-size: 20px !important;}
-	.brand-heading{margin-top:30px !important;}
-	.iconos i{font-size: 20px !important;}
+
+@media screen and (max-width:600px){
+	h1{font:24px/50px "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	.callbacks_nav{top:47%;}
 }
 
-@media screen and (min-width: 381px) and (max-width:780px){
-	.arrow{padding-top:150px !important;}
-	.brand-heading{margin-top:-180px !important;}
+@media(min-width:768px){
+	p{margin:0 0 35px;font-size:20px;line-height:1.6;text-align:center;}
+	.intro{height:100%;padding:0;}
+	.intro .intro-body .brand-heading{font-size:100px;font-family:"Lato","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:700;color:#fff;text-shadow:2px 2px 3px rgba(0, 0, 0, 0.6);}
+	.content-section{padding-top:80px;}
+	.brand-heading{margin-top:30px !important;}
+}
+
+@media(max-width:380px){
+	.content-section{padding-top:50px;}
+	.navbar-custom{font-size: 10px;}
+	.grises img{display:block;width: 65px;height: 40px;}
+	.grises img:hover{display: block;width: 65px;height: 40px;}
+}
+
+@media(max-width:768px){
+	.brand-heading{margin-top:30px !important;}
+	.iconos i{font-size: 20px !important;padding: 0 0;}
+}
+
+@media screen and (min-width: 381px) and (max-width:549px){
+	.grises img{display:block;width: 87px;height: 56px;}
+	.grises img:hover{display: block;width: 87px;height: 56px;}
+}
+
+@media screen and (min-width: 550px) and (max-width:768px){
+	.grises img{display:block;width: 139px;height: 90px;}
+	.grises img:hover{display: block;width: 139px;height: 90px;}
+}
+
+@media screen and (min-width: 381px) and (max-width:993px){
 	.navbar-custom{font-size: 10px;}
 }
