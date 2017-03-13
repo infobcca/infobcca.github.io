@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Flogo2.png?alt=media&token=6fc63ae6-b7c9-4d38-b8cb-b17d9bda7dcb" style="height: 50px; width: 95px;" class="img-responsive logo" alt="">
+                    <img id="im_logo2"  style="height: 50px; width: 95px;" class="img-responsive logo" alt="">
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -104,32 +104,32 @@
             <div class="row text-center content-row">
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/oca.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_oca" class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/oca2.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_oca2"  class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/oce.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_oce"  class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/oce2.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_oce2"  class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/ocm.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_ocm.jpg"  class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay=".2s">
                     <div class="about-content">
-                        <img src="assets/img/cert/ocp.jpg" class="img-responsive" style="display: inline-table !important" alt="">
+                        <img id="im_ocp"  class="img-responsive" style="display: inline-table !important" alt="">
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
                 <div class="col-lg-12">
                     <div class="about-carousel">
                         <div class="item">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Fpeople%2Forlando.png?alt=media&token=001c1890-4bb6-44b3-9443-c1a016cc351e" class="img-responsive" alt="">
+                            <img id="im_orlando"  class="img-responsive" alt="">
                             <div class="caption">
                                 <h3 class="users">Ing. Orlando Becerra</h3>
                                 <hr class="colored">
@@ -167,7 +167,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Fpeople%2Fmayra.png?alt=media&token=b5b16344-ec7a-41c3-9244-4b6179719a24" class="img-responsive" alt="">
+                            <img id="im_mayra"  class="img-responsive" alt="">
                             <div class="caption">
                                 <h3 class="users">Ing. Mayra Sánchez</h3>
                                 <hr class="colored">
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Fpeople%2Fmayra.png?alt=media&token=b5b16344-ec7a-41c3-9244-4b6179719a24" class="img-responsive" alt="">
+                            <img id="im_abel" class="img-responsive" alt="">
                             <div class="caption">
                                 <h3 class="users">Ing. Abel Rangel</h3>
                                 <hr class="colored">
@@ -205,7 +205,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <img src="https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Fpeople%2Fgerson.png?alt=media&token=7a44f772-10ab-47e8-9a48-0ec7ac96c15c" class="img-responsive" alt="">
+                            <img id="im_gerson" class="img-responsive" alt="">
                             <div class="caption">
                                 <h3 class="users">Ing. Gerson Rosales</h3>
                                 <hr class="colored">
@@ -524,12 +524,31 @@
         loop: true,
       });
   });
-  $(document).ready(function(){
-      $('#cta-quote').css('background-image', 'url("https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Fimagen.jpg?alt=media&token=f11bd39e-ac8b-4e56-87e3-90c9077815ee")');
-      $('#hd_firts').css('background-image', 'url("https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Ffondo.jpg?alt=media&token=ad15921d-da99-4334-ad8a-fa73a117305a")');
-      $('#ft_firts').css('background-image', 'url("https://firebasestorage.googleapis.com/v0/b/infobc-acb9e.appspot.com/o/img%2Ffooter.jpg?alt=media&token=136e3fce-9d12-4c80-b926-fd2e74e2138b")');
 
+    $(document).ready(function(){
+      setTimeout(loadImage,30);
+ 
   })
+
+  function loadImage(){
+
+      $('#cta-quote').css('background-image', 'url("assets/img/imagen.jpg")');
+      $('#hd_firts').css('background-image', 'url("assets/img/fondo.jpg")');
+      $('#ft_firts').css('background-image', 'url("assets/img/footer.jpg")');
+      $('#im_logo2').attr("src","assets/img/logo2.png");
+      $('#im_oca').attr("src","assets/img/cert/oca.jpg");
+      $('#im_oca2').attr("src","assets/img/cert/oca2.jpg");
+      $('#im_oce').attr("src","assets/img/cert/oce.jpg");
+      $('#im_oce2').attr("src","assets/img/cert/oce2.jpg");
+      $('#im_ocm').attr("src","assets/img/cert/ocm.jpg");
+      $('#im_ocp').attr("src","assets/img/cert/ocp.jpg");
+      $('#im_orlando').attr("src","assets/img/people/orlando.png");
+      $('#im_mayra').attr("src","assets/img/people/mayra.png");
+      $('#im_abel').attr("src","assets/img/people/abel.png");
+      $('#im_gerson').attr("src","assets/img/people/gerson.png");
+
+  }
+ 
 </script>
 
 </body>
